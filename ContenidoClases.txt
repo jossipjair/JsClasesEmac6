@@ -15,3 +15,5 @@ Clase 16 - Manejo de errores
 Clase 17 - Break & Continue 
 Clase 18 - Destructuracion
 Clase 19 - Objetos Literales
+Clase 20 - Operador Rest y Spread
+Clase 21 - Arrow Functions

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+
+    <script>
+
+      //Funcion anonima expresada no se puede ejecutar la funcion sin antes ser declarada
+      const saludar= function(){
+        console.log("Hola");
+      };
+
+      saludar();
+
+
+      //Funcion declarada con el hoisting se puede ejecutar la funcion sin antes ser declarada
+      function saludar2(){
+        console.log("Hola 2");
+      };
+      saludar2();
+
+      //Arrow Function
+      //Si es de una sola linea se pueden dejar sin llaves
+      const saludar3 = () => console.log("Hola 3");
+      saludar3();
+
+      //Return implicito
+      const saludar4 = (nombre) => console.log(nombre);
+      saludar4("Hola Jair 4");
+
+      const sumar = (a, b) => {
+        return a + b; 
+      }
+      console.log(sumar(8, 9));
+
+      const sumar1 = (a, b) => a + b;
+      console.log(sumar1(9, 9));
+
+      const functionDeVariasLineas = ()=>{
+        console.log("Uno");
+        console.log("Dos");
+        console.log("Tres");
+      }
+
+      functionDeVariasLineas();
+
+
+
+      const numeros = [1, 2, 3, 4, 5];
+
+      numeros.forEach(function(el, index){
+        console.log(`${el} esta en la posicion ${index}`)
+      });
+
+      numeros.forEach((el, index)=>{
+        console.log(`${el} esta en la posicion ${index}`)
+      });
+
+      /*
+      function perro(){
+        console.log(this);
+      }
+
+      perro();
+      */
+
+      //Cuando se usa funciones anonimas el objeto this se asocia al objeto del contexto interno del objeto
+      //Cuando se usa arrow function el contexto se asocia al objeto windows o es decir al objeto mas arriba del objeto inicial
+      const perro = {
+        nombre: "Chiste",
+        ladrar: () =>{
+          console.log(this);
+        }
+      };
+
+      perro.ladrar();
+
+
+    </script>
+  </body>
+</html>

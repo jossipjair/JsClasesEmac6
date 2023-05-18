@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+
+    <script>
+
+      //El parametro rest funciona para pasar arreglos que no tiene tamaño su operador es tres puntos ...
+      //Solo para firma de funciones
+      function sumar(a, b, ...c){
+        let resultado = a + b;
+
+        c.forEach(function(n){
+          resultado += n;
+        });
+
+        return resultado;
+      }
+    
+      console.log(sumar(1, 2));
+      //a partir del tercer valor se crean dinamicos por el parametro rest que se ha a gregado
+      console.log(sumar(1, 2, 3));
+      console.log(sumar(1, 2, 3, 4, 5));
+      console.log(sumar(1, 2, 3, 4, 5, 6));
+      console.log(sumar(1, 2, 3, 4, 5, 6, 7));
+
+
+      //OPERADOR DE PROPAGACION: para unir arreglos por ejemplo
+      const arr1 = [1, 2, 3, 4, 5];
+      const arr2 = [6, 7, 8, 9, 0];
+
+      console.log(arr1, arr2);
+
+      //const arr3 = [arr1, arr2];
+
+      const arr3 = [...arr1, ...arr2];
+      console.log(arr3);
+
+    </script>
+  </body>
+</html>
