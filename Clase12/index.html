@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos de JavaScript</h1>
+
+
+    <script>
+
+        let a = new String("Hola");
+        console.log(a);
+        
+        const b = {}
+        console.log(b);
+
+        const c = new Object();
+        console.log(c);
+
+        /*Dentro de un objeto a las variables
+        se le va a llamar atributos/propiedades y 
+        a las funciones dentro del objeto se le llaman
+        métodos
+        
+        */
+        const jair = {
+            nombre: "Jair",
+            apellido: "Escalaya",
+            edad: 29,
+            pasatiempos: ["Bailar", "Jugar L4DEAD"],
+            soltero: false,
+            contacto: {
+                email: "jairescalaya@gmail.com",
+                twitter:"@jossipjair",
+                movil: 947141863
+            },
+            saludar: function(){
+                console.log("Hola =D");
+            },
+            decirMiNombre: function(){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y mi edad es ${this.edad} y me puede seguir como ${this.contacto.twitter} en Twiter`); 
+            }
+        }   
+        
+        console.log(jair);
+        console.log(jair["nombre"]);
+        console.log(jair["apellido"]);
+        console.log(jair.nombre);
+        console.log(jair.apellido);
+        console.log(jair.edad);
+        console.log(jair.soltero);
+        console.log(jair.pasatiempos[1]);
+        console.log(jair.contacto.twitter);
+        jair.saludar();
+        jair.decirMiNombre();
+
+        console.log(Object.keys(jair)); //Te muestra las llaves de un objeto o sus propiedades
+        console.log(Object.values(jair)); 
+        console.log(jair.hasOwnProperty("nombre")); //Busca en la lista de propiedades
+        console.log(jair.hasOwnProperty("nacimiento")); //Busca en la lista de propiedades
+
+
+    </script>
+</body>
+</html>

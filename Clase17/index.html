@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+
+    <script>
+      const numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+      for (let i = 0; i < numero.length; i++) {
+        if (i === 5) {
+          break; //Sale de la estructura
+        }
+
+        console.log(numero[i]);
+      }
+
+      for (let i = 0; i < numero.length; i++) {
+        if (i === 5) {
+          continue; //Omite el codigo que se encuentra esa iteracion del ciclo
+        }
+
+        console.log(numero[i]);
+      }
+    </script>
+  </body>
+</html>

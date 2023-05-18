@@ -1,0 +1,6 @@
+VAR es de ambito global y se puede ver con el objeto window
+LET es de ambito local
+CONST es una constante
+
+DOM
+Objeto windodw mapea todo el navegador

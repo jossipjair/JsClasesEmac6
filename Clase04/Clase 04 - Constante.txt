@@ -1,0 +1,8 @@
+CONST para primitivos no permite reasginar su valor
+para el caso de CONST en objetos permite agregar elementos 
+y propiedades.
+Ejemplo de const en objetos son la de ser humano en la cual
+uno con el tiempo va cambiando, es igual con un objeto tipo constya que puedeir
+cambiando con el tiempo su valor pero sigue siendo un objeto
+
+let permite crear variable sin valor

@@ -1,0 +1,1 @@
+String con length, split, toupercase, to lowellcase

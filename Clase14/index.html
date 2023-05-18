@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+
+    <script>
+      let edad = 17;
+
+      if (edad > 17) {
+        console.log("Eres mayor de edad");
+      } else {
+        console.log("Eres menor de edad");
+      }
+
+      if (edad >= 18) {
+        console.log("Eres mayor de edad");
+      } else {
+        console.log("Eres menor de edad");
+      }
+
+      if (edad < 18) {
+        console.log("Eres menor de edad");
+      } else {
+        console.log("Eres mayor de edad");
+      }
+
+      if (edad <= 17) {
+        console.log("Eres menor de edad");
+      } else {
+        console.log("Eres mayor de edad");
+      }
+
+      //if - else if - else
+      //Dejame dormir  0hrs - 5hrs
+      //Buenos días 6hrs - 11hrs
+      //Buenos tardes 12hrs - 18hrs
+      //Buenos noches 19hrs - 23hrs
+
+      let hora = 15;
+      if (hora >= 0 && hora <= 5) {
+        console.log("Dejame dormir");
+      } else if (hora >= 6 && hora <= 11) {
+        console.log("Buenos dias");
+      } else if (hora >= 12 && hora <= 18) {
+        console.log("Buenas tardes");
+      } else if (hora >= 19 && hora <= 23) {
+        console.log("Buenas noches");
+      } else {
+        console.log("Error ingreando hora");
+      }
+
+      let hora2 = 15;
+      if (hora2 > 0 && hora2 < 6) {
+        console.log("Dejame dormir");
+      } else if (hora2 > 5 && hora2 < 12) {
+        console.log("Buenos dias");
+      } else if (hora2 > 11 && hora2 < 19) {
+        console.log("Buenas tardes");
+      } else if (hora2 > 18 && hora2 < 24) {
+        console.log("Buenas noches");
+      } else {
+        console.log("Error ingreando hora");
+      }
+
+      /*Operador ternario 
+        (condición) ? verdadero : falsa;
+        */
+      console.log("Operador ternario");
+      let eresMayor = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+
+      console.log(eresMayor);
+
+      //switch - case
+      /*
+        domingo - 0
+        lunes - 1
+        martes - 2
+        miercoles - 3
+        jueves - 4
+        viernes - 5
+        sabado - 6
+       */
+      let dia = 0;
+      switch (dia) {
+        case 0:
+          console.log("Domingo");
+          break;
+        case 1:
+          console.log("Lunes");
+          break;
+        case 2:
+          console.log("Martes");
+          break;
+        case 3:
+          console.log("Miercoles");
+          break;
+        case 4:
+          console.log("Jueves");
+          break;
+        case 5:
+          console.log("Viernes");
+          break;
+        case 6:
+          console.log("Sabado");
+          break;
+        default:
+          console.log("El día no existe");
+          break;
+      }
+    </script>
+  </body>
+</html>

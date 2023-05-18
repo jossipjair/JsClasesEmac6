@@ -1,0 +1,17 @@
+Clase 03 - Variables Var VS let
+Clase 04 - Constante
+Clase 05 - String
+Clase 06 - Template String
+Clase 07 - Numbers
+Clase 08 - Booleans
+Clase 09 - undefined, null, NaN
+Clase 10 - Funciones
+Clase 11 - Arreglos
+Clase 12 - Objetos
+Clase 13 - Tipo de operadores
+Clase 14 - Condicionales
+Clase 15 - Loops
+Clase 16 - Manejo de errores
+Clase 17 - Break & Continue 
+Clase 18 - Destructuracion
+Clase 19 - Objetos Literales
