@@ -17,3 +17,9 @@ Clase 18 - Destructuracion
 Clase 19 - Objetos Literales
 Clase 20 - Operador Rest y Spread
 Clase 21 - Arrow Functions
+Clase 22 - Prototipos
+Clase 23 - Herencia Prototipica
+Clase 24 - Clases y Herencia
+Clase 25 - Métodos estaticos, getters y setters
+Clase 26 - Objeto Console
+Clase 27 - Objeto Date

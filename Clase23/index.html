@@ -8,8 +8,8 @@
   </head>
   <body>
     <h1>Fundamentos de JavaScript</h1>
-
     <script>
+
       /*
       const animal ={
         nombre: "Snoopy",
@@ -64,7 +64,27 @@
         console.log(`Hola me llamo ${this.nombre}`);
       };
 
-      const snopy = new Animal("Snopy", "Macho");
+      //Herencia prototipica
+      function Perro(nombre, genero, tamanio){
+        this.super = Animal; //Asociacion de herencia prototipica
+        this.super(nombre, genero);
+        this.tamanio = tamanio;
+      }
+
+      //Perro esta heredando de animal
+      Perro.prototype = new Animal();
+      Perro.prototype.constructor = Perro;
+      
+      //Sobreescritura de metodo del prototipo padre en hijo
+      Perro.prototype.sonar = function(){
+        console.log("Soy un perro y mi sonido es un ladrido");
+      }
+
+      Perro.prototype.ladrar = function(){
+        console.log("guau guau");
+      }
+
+      const snopy = new Perro("Snopy", "Macho", "Mediano");
       const lolaBunny = new Animal("Lola Bunny", "Hembra");
 
       console.log(snopy);
@@ -73,6 +93,7 @@
       snopy.saludar();
       lolaBunny.sonar();
       lolaBunny.saludar();
+      
     </script>
   </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+    <script>
+    
+    console.log(console);
+    console.error("Esto es un error");
+    console.warn("Esto es un warning");
+    console.info("Esto es un mensaje informativo");
+    console.log("Registro de lo que ha pasado en nuestra aplicacion");
+    
+    let nombre = "Jair";
+    let apellido = "Escalaya Juarez";
+    let edad = 29;
+
+    console.log(nombre);
+    console.log(apellido);
+    console.log(edad);
+    console.log(nombre, apellido, edad);
+    console.log(`Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años`);
+    console.log(`Hola mi nombre es %s %s y tengo %d años`, nombre, apellido, edad);
+
+    console.clear();
+    console.log(window);
+    console.log(document);
+    console.dir(window);
+    console.dir(document);
+    console.clear();
+
+    console.group("Cursos de @Jonmircha en Youtube");
+    console.log("JavaScript");
+    console.log("NodeJS");
+    console.log("Progresi WebApp");
+    console.log("Flexbox");
+    console.log("Diseño y programación Web");
+    console.groupEnd();
+
+    console.groupCollapsed("Cursos de @Jonmircha en Youtube");
+    console.log("JavaScript");
+    console.log("NodeJS");
+    console.log("Progresi WebApp");
+    console.log("Flexbox");
+    console.log("Diseño y programación Web");
+    console.groupEnd();
+    console.clear();
+
+    console.log(console);
+    console.table(Object.entries(console).sort());//Agregando a una tabla tipo console
+    
+    //Con arreglo a tabla en console.log
+    const numeros = [1, 2, 3, 4, 5];
+    const vocales = ["a", "e", "i", "o", "u"];
+
+    console.table(numeros);
+    console.table(vocales);
+
+    const perro ={
+      nombre: "Hido",
+      raza: "Pequeño",
+      color: "Marron"
+    }
+
+    console.table(perro);
+    console.clear();
+
+    //Para saber cuanto tiempo se demora en responder una solicitud http, debe llear el mismo nombre
+    //en time y timeend
+    console.time("Cuanto tiempo tarda mi codigo");
+
+    const arreglo = Array(1000000);
+    
+    for(let i = 0; i < arreglo.length; i++){
+      arreglo[i] = i;
+    }
+
+    console.timeEnd("Cuanto tiempo tarda mi codigo");
+    console.clear();
+    //
+
+    for(let i = 0; i <= 100; i++){
+      console.count("codigo for");
+      console.log(i);
+    }
+    console.clear();
+
+    let x = 3;
+    let y = 2;
+    let pruebaXY = "Se espera que X sea menor que Y";
+
+    console.assert(x < y, {x, y}, pruebaXY);
+
+    </script>
+  </body>
+</html>
