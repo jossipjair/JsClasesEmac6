@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+    <script>
+      /*
+      Expresiones regulares
+      Son una secuencia de caracteres que forman un patrón
+      de búsqueda, principalmente utilizada para la búsqueda de patrones de cadena de caracteres
+
+     */
+      let cadena =
+        "Lorem 2Ipsum es un texto de marcador de posición comúnmente utilizado en las industrias gráficas, gráficas y editoriales para previsualizar diseños y maquetas visuales";
+
+      //new RegExp("patron", "bandera o comodines que permiten ")
+      let expReg = new RegExp("Lorem", "ig");
+
+      //let expReg2 = /\d/ig;
+      //let expReg2 = /[0-9]/ig;
+      let expReg2 = /lorem{1,3}/ig;
+      
+      console.log(expReg.test(cadena));
+      console.log(expReg.exec(cadena));
+
+      console.log(expReg2.test(cadena));
+      console.log(expReg2.exec(cadena));
+    </script>
+  </body>
+</html>

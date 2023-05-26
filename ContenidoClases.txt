@@ -23,3 +23,7 @@ Clase 24 - Clases y Herencia
 Clase 25 - Métodos estaticos, getters y setters
 Clase 26 - Objeto Console
 Clase 27 - Objeto Date
+Clase 28 - Objeto Math
+Clase 29 - Operador Corticircuito
+Clase 30 - Alert, Confirm, Prompt
+Clase 31 - Expresiones Regulares

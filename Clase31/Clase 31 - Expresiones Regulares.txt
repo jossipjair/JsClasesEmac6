@@ -1,0 +1,4 @@
+Expresiones regulares
+      Son una secuencia de caracteres que forman un patrón
+      de búsqueda, principalmente utilizada para la búsqueda de patrones de cadena de caracteres
+      
