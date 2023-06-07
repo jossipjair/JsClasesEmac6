@@ -1,0 +1,11 @@
+ORDENAMIENTO DE CODIGO
+1. IMPORTACIONES DE MODULO
+2. DECLARACION DE VARIABLES
+3. DECLARACION DE FUNCIONES
+4. EJECUCION DE CODIGO
+
+
+Los archivos en el HTML deben tener type="module" para que funcionen las exportacione e importaciones
+    <script src="./js/modulos.js" type="module"></script>
+nomodule un valor boolean que ejecuta código JS en navegadores que no tienen soporte
+    <script src="./js/no-modulos.js" nomodule></script>

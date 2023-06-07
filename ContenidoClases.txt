@@ -27,3 +27,6 @@ Clase 28 - Objeto Math
 Clase 29 - Operador Corticircuito
 Clase 30 - Alert, Confirm, Prompt
 Clase 31 - Expresiones Regulares
+Clase 32 - Funciones Anonimas Autoejecutable
+Clase 33 - Módulos Import & Export
+Clase 34 - Ejercicios de Programación
